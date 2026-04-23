@@ -3,102 +3,95 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Social Listings</title>
-  <style>
-    :root {
-      color-scheme: light;
-      --bg: #f7f8fb;
-      --panel: #ffffff;
-      --ink: #1f2937;
-      --soft: #5b6474;
-      --line: #d8dde7;
-      --accent: #2563eb;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: "Segoe UI", Arial, sans-serif;
-      color: var(--ink);
-      background: var(--bg);
-    }
-
-    main {
-      width: min(860px, 92vw);
-      margin: 36px auto;
-      padding: 24px;
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      background: var(--panel);
-    }
-
-    h1 {
-      margin: 0 0 8px;
-      font-size: clamp(1.5rem, 3vw, 2rem);
-    }
-
-    p {
-      margin: 0 0 18px;
-      color: var(--soft);
-    }
-
-    ul {
-      margin: 0;
-      padding-left: 18px;
-      columns: 2;
-      column-gap: 28px;
-    }
-
-    li {
-      break-inside: avoid;
-      margin-bottom: 10px;
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    a:hover,
-    a:focus-visible {
-      text-decoration: underline;
-    }
-
-    @media (max-width: 700px) {
-      main {
-        margin: 20px auto;
-        padding: 16px;
-      }
-
-      ul {
-        columns: 1;
-      }
-    }
-  </style>
+  <title>Stock | Names Storefront</title>
+  <link rel="stylesheet" href="./site.css">
 </head>
 <body>
-  <main>
-    <h1>Social Listings</h1>
-    <p>Select a page below to open its entries.</p>
-    <ul>
-      <li><a href="./social-discord.html">Discord</a></li>
-      <li><a href="./social-email.html">Email</a></li>
-      <li><a href="./social-instagram.html">Instagram</a></li>
-      <li><a href="./social-kick.html">Kick</a></li>
-      <li><a href="./social-linktree.html">Linktree</a></li>
-      <li><a href="./social-pastebin.html">Pastebin</a></li>
-      <li><a href="./social-pinterest.html">Pinterest</a></li>
-      <li><a href="./social-snapchat.html">Snapchat</a></li>
-      <li><a href="./social-solo-to.html">solo.to</a></li>
-      <li><a href="./social-soundcloud.html">SoundCloud</a></li>
-      <li><a href="./social-tiktok.html">TikTok</a></li>
-      <li><a href="./social-twitch.html">Twitch</a></li>
-      <li><a href="./social-twitter.html">Twitter</a></li>
-      <li><a href="./social-youtube.html">YouTube</a></li>
-    </ul>
-  </main>
+  <div class="site-shell">
+    <header class="site-header">
+      <nav class="top-nav" aria-label="Primary">
+        <a class="brand" href="./index.html"><span class="brand-mark" aria-hidden="true"></span>Names Storefront</a>
+        <div class="nav-links">
+          <a class="nav-link active" href="./index.html">Stock</a>
+          <a class="nav-link" href="./contact.html">Contact Me</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <span class="eyebrow">Available Inventory</span>
+        <h1>Premium Handle Stock</h1>
+        <p>Browse active listings with direct actions for viewing full entries or contacting about purchase. Everything below is live and grouped by platform owner.</p>
+        <div class="stat-grid">
+          <article class="stat">
+            <div class="stat-value" data-catalog-total>14</div>
+            <div class="stat-label">Platform Sets</div>
+          </article>
+          <article class="stat">
+            <div class="stat-value">516</div>
+            <div class="stat-label">Total Names</div>
+          </article>
+          <article class="stat">
+            <div class="stat-value">2</div>
+            <div class="stat-label">Main Owners</div>
+          </article>
+          <article class="stat">
+            <div class="stat-value" data-visible-total>14</div>
+            <div class="stat-label">Visible Cards</div>
+          </article>
+        </div>
+      </section>
+
+      <section class="stock-panel">
+        <div class="panel-top">
+          <div>
+            <h2 class="panel-title">Store Listings</h2>
+            <p class="panel-subtitle">Use owner filters to focus inventory quickly.</p>
+          </div>
+          <div class="filters" role="tablist" aria-label="Owner Filter">
+            <button class="filter-chip active" type="button" data-filter-chip="all">All</button>
+            <button class="filter-chip" type="button" data-filter-chip="nano">Nano</button>
+            <button class="filter-chip" type="button" data-filter-chip="karl">Karl</button>
+            <button class="filter-chip" type="button" data-filter-chip="shared">Shared</button>
+          </div>
+        </div>
+
+        <div class="product-grid" data-store-grid></div>
+        <p class="empty-state" data-empty>No cards found for this filter.</p>
+      </section>
+    </main>
+  </div>
+
+  <section class="modal" data-modal hidden aria-live="polite">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="detail-title">
+      <div class="modal-top">
+        <h3 id="detail-title" data-modal-title></h3>
+        <button class="modal-close" type="button" data-close-modal aria-label="Close details">Close</button>
+      </div>
+      <p class="modal-copy" data-modal-copy></p>
+      <div class="modal-meta">
+        <article class="stat">
+          <div class="stat-value" data-modal-platform></div>
+          <div class="stat-label">Platform</div>
+        </article>
+        <article class="stat">
+          <div class="stat-value" data-modal-owners></div>
+          <div class="stat-label">Owners</div>
+        </article>
+        <article class="stat">
+          <div class="stat-value" data-modal-entries></div>
+          <div class="stat-label">Entries</div>
+        </article>
+      </div>
+      <div class="modal-actions">
+        <a class="btn ghost" data-modal-listing href="#">Open Listing</a>
+        <a class="btn primary" data-modal-contact href="#">Buy / Contact</a>
+      </div>
+    </div>
+  </section>
+
+  <script src="./store.js"></script>
 </body>
 </html>
