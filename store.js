@@ -1,4 +1,4 @@
-(() => {
+﻿(() => {
   const catalog = [
     {
       title: "Discord OGs",
@@ -19,8 +19,8 @@
     {
       title: "Instagram Names",
       platform: "Instagram",
-      entries: 12,
-      description: "Short and clean IG-ready names with active resale potential.",
+      entries: 1,
+      description: "Instagram-ready names listed in a clean platform directory.",
       href: "./social-instagram.html",
       icon: "https://cdn.simpleicons.org/instagram/cfd8ee",
     },
@@ -35,8 +35,8 @@
     {
       title: "Linktree Collection",
       platform: "Linktree",
-      entries: 308,
-      description: "Largest active catalog with broad tier options across many generations.",
+      entries: 309,
+      description: "Large active catalog with broad tier options across many generations.",
       href: "./social-linktree.html",
       icon: "https://cdn.simpleicons.org/linktree/cfd8ee",
     },
@@ -60,15 +60,15 @@
       title: "Snapchat List",
       platform: "Snapchat",
       entries: 35,
-      description: "Mid-size Snapchat inventory with a strong mix of casual and premium names.",
+      description: "Snapchat inventory in directory format for quick scanning.",
       href: "./social-snapchat.html",
       icon: "https://cdn.simpleicons.org/snapchat/cfd8ee",
     },
     {
-      title: "solo.to Stock",
-      platform: "solo.to",
+      title: "Solo.to Stock",
+      platform: "Solo.to",
       entries: 67,
-      description: "High-volume solo.to handles suitable for profile hubs and redirects.",
+      description: "Solo.to handles suitable for profile hubs and redirect naming.",
       href: "./social-solo-to.html",
       icon: "",
     },
@@ -76,31 +76,31 @@
       title: "SoundCloud Tags",
       platform: "SoundCloud",
       entries: 2,
-      description: "Very limited SoundCloud names currently available for direct review.",
+      description: "Limited SoundCloud names currently available for direct review.",
       href: "./social-soundcloud.html",
       icon: "https://cdn.simpleicons.org/soundcloud/cfd8ee",
     },
     {
+      title: "Telegram Handles",
+      platform: "Telegram",
+      entries: 4,
+      description: "Telegram naming set available in this imported inventory batch.",
+      href: "./social-telegram.html",
+      icon: "https://cdn.simpleicons.org/telegram/cfd8ee",
+    },
+    {
       title: "TikTok Inventory",
       platform: "TikTok",
-      entries: 46,
-      description: "Mixed inventory from Nano and Karl, ideal for creator and theme pages.",
+      entries: 34,
+      description: "TikTok inventory from current imported records.",
       href: "./social-tiktok.html",
       icon: "https://cdn.simpleicons.org/tiktok/cfd8ee",
     },
     {
-      title: "Twitch Handles",
-      platform: "Twitch",
-      entries: 15,
-      description: "Karl-managed Twitch handles with streamer-first naming potential.",
-      href: "./social-twitch.html",
-      icon: "https://cdn.simpleicons.org/twitch/cfd8ee",
-    },
-    {
-      title: "Twitter Pair",
+      title: "Twitter Names",
       platform: "Twitter",
-      entries: 2,
-      description: "Small Twitter pair available now with direct transfer discussions.",
+      entries: 4,
+      description: "Twitter handles available in this current imported set.",
       href: "./social-twitter.html",
       icon: "https://cdn.simpleicons.org/x/cfd8ee",
     },
@@ -111,7 +111,7 @@
       description: "Limited YouTube naming options currently listed in inventory.",
       href: "./social-youtube.html",
       icon: "https://cdn.simpleicons.org/youtube/cfd8ee",
-    },
+    }
   ];
 
   const grid = document.querySelector("[data-store-grid]");
