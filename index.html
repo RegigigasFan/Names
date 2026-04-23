@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Stock | Names Storefront</title>
+  <title>Stock | Names Directory</title>
   <link rel="stylesheet" href="./site.css">
 </head>
 <body>
   <div class="site-shell">
     <header class="site-header">
       <nav class="top-nav" aria-label="Primary">
-        <a class="brand" href="./index.html"><span class="brand-mark" aria-hidden="true"></span>Names Storefront</a>
+        <a class="brand" href="./index.html"><span class="brand-mark" aria-hidden="true"></span>Names Directory</a>
         <div class="nav-links">
           <a class="nav-link active" href="./index.html">Stock</a>
           <a class="nav-link" href="./contact.html">Contact Me</a>
@@ -20,13 +20,13 @@
 
     <main>
       <section class="hero">
-        <span class="eyebrow">Available Inventory</span>
+        <span class="eyebrow">Inventory Browser</span>
         <h1>Premium Handle Stock</h1>
-        <p>Browse active listings with direct actions for viewing full entries or contacting about purchase. Everything below is live and grouped by platform owner.</p>
-        <div class="stat-grid">
+        <p>Browse by platform and open each directory page to review listed names in a clean, structured format.</p>
+        <div class="stat-grid stat-grid-3">
           <article class="stat">
             <div class="stat-value" data-catalog-total>14</div>
-            <div class="stat-label">Platform Sets</div>
+            <div class="stat-label">Different Platforms</div>
           </article>
           <article class="stat">
             <div class="stat-value">516</div>
@@ -34,11 +34,7 @@
           </article>
           <article class="stat">
             <div class="stat-value">2</div>
-            <div class="stat-label">Main Owners</div>
-          </article>
-          <article class="stat">
-            <div class="stat-value" data-visible-total>14</div>
-            <div class="stat-label">Visible Cards</div>
+            <div class="stat-label">Contributors</div>
           </article>
         </div>
       </section>
@@ -46,51 +42,15 @@
       <section class="stock-panel">
         <div class="panel-top">
           <div>
-            <h2 class="panel-title">Store Listings</h2>
-            <p class="panel-subtitle">Use owner filters to focus inventory quickly.</p>
-          </div>
-          <div class="filters" role="tablist" aria-label="Owner Filter">
-            <button class="filter-chip active" type="button" data-filter-chip="all">All</button>
-            <button class="filter-chip" type="button" data-filter-chip="nano">Nano</button>
-            <button class="filter-chip" type="button" data-filter-chip="karl">Karl</button>
-            <button class="filter-chip" type="button" data-filter-chip="shared">Shared</button>
+            <h2 class="panel-title">Directory Listings</h2>
+            <p class="panel-subtitle">Select a platform to open its full list.</p>
           </div>
         </div>
 
         <div class="product-grid" data-store-grid></div>
-        <p class="empty-state" data-empty>No cards found for this filter.</p>
       </section>
     </main>
   </div>
-
-  <section class="modal" data-modal hidden aria-live="polite">
-    <div class="modal-backdrop" data-close-modal></div>
-    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="detail-title">
-      <div class="modal-top">
-        <h3 id="detail-title" data-modal-title></h3>
-        <button class="modal-close" type="button" data-close-modal aria-label="Close details">Close</button>
-      </div>
-      <p class="modal-copy" data-modal-copy></p>
-      <div class="modal-meta">
-        <article class="stat">
-          <div class="stat-value" data-modal-platform></div>
-          <div class="stat-label">Platform</div>
-        </article>
-        <article class="stat">
-          <div class="stat-value" data-modal-owners></div>
-          <div class="stat-label">Owners</div>
-        </article>
-        <article class="stat">
-          <div class="stat-value" data-modal-entries></div>
-          <div class="stat-label">Entries</div>
-        </article>
-      </div>
-      <div class="modal-actions">
-        <a class="btn ghost" data-modal-listing href="#">Open Listing</a>
-        <a class="btn primary" data-modal-contact href="#">Buy / Contact</a>
-      </div>
-    </div>
-  </section>
 
   <script src="./store.js"></script>
 </body>
