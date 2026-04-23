@@ -19,7 +19,7 @@
     {
       title: "Instagram Names",
       platform: "Instagram",
-      entries: 1,
+      entries: 0,
       description: "Instagram-ready names listed in a clean platform directory.",
       href: "./social-instagram.html",
       icon: "https://cdn.simpleicons.org/instagram/cfd8ee",
@@ -59,7 +59,7 @@
     {
       title: "Snapchat List",
       platform: "Snapchat",
-      entries: 35,
+      entries: 34,
       description: "Snapchat inventory in directory format for quick scanning.",
       href: "./social-snapchat.html",
       icon: "https://cdn.simpleicons.org/snapchat/cfd8ee",
@@ -91,7 +91,7 @@
     {
       title: "TikTok Inventory",
       platform: "TikTok",
-      entries: 34,
+      entries: 14,
       description: "TikTok inventory from current imported records.",
       href: "./social-tiktok.html",
       icon: "https://cdn.simpleicons.org/tiktok/cfd8ee",
@@ -99,7 +99,7 @@
     {
       title: "Twitter Names",
       platform: "Twitter",
-      entries: 4,
+      entries: 0,
       description: "Twitter handles available in this current imported set.",
       href: "./social-twitter.html",
       icon: "https://cdn.simpleicons.org/x/cfd8ee",
